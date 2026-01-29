@@ -94,9 +94,3 @@ Optionally, you may also cite the `verl` repository:
 ### Cite MulFeRL
 
 A bibtex entry for MulFeRL will be provided with the final paper/release.
-
----
-
-## License
-
-See `LICENSE` (if provided) for licensing details.
