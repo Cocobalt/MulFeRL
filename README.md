@@ -5,14 +5,6 @@ This repository contains the implementation of **MulFeRL** (**Mul**ti-turn **Fe*
 
 **Implementation note:** The code is developed **on top of the open-source `verl` RL training framework** (Volcano Engine Reinforcement Learning for LLMs; the open-source release of *HybridFlow*). See **Citation** below.
 
----
-
-## What’s included
-
-- MulFeRL training pipeline (trainer/workers/tools).
-- Experiment configs aligned with the paper’s hyperparameters.
-
----
 
 ## Quickstart
 
