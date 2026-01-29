@@ -1,0 +1,32 @@
+tools:
+  - class_name: "verl.tools.mulferl.MulFeRLTool"
+    config:
+      type: native
+    tool_schema:
+      type: "function"
+      function:
+        name: "calc_mulferl_reward" 
+        description: "This function is only intended to maintain consistency with the framework's sglang; we use an additional custom reward to compute the reward."
+        parameters:
+          type: "object"
+          properties:
+            question:
+              type: "string"
+              description: ""
+            mode:
+              type: "string"
+              enum: ["group", "merge"]
+              description: >
+                'group' = grade one or more raw solutions and give feedback;
+                'merge' = merge multiple feedback strings into a final feedback.
+            solutions:
+              type: "array"
+              items:
+                type: "string"
+              description: "List of candidate solutions for this question (used when mode='group')."
+            feedbacks:
+              type: "array"
+              items:
+                type: "string"
+              description: "List of intermediate feedback strings (used when mode='merge')."
+          required: ["question", "mode"]
