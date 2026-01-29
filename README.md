@@ -1,6 +1,7 @@
 # Multi-Turn RLHF with Structured Feedback (MulFeRL)
 
-This repository contains the implementation of **MulFeRL**, a method for **multi-turn RLHF/RLVR training with structured natural-language feedback**.
+This repository contains the implementation of **MulFeRL** (**Mul**ti-turn **Fe**edback-guided **R**einforcement **L**earning), a dynamic framework that strengthens **RLVR** by learning from **structured natural-language feedback** on failed samples. MulFeRL combines (i) **dynamic multi-turn feedback-driven regeneration** that triggers targeted feedback only when all candidates fail and guides iterative revisions, (ii) **two complementary learning signals**—an in-turn **GRPO** objective for within-turn relative advantages and a cross-turn **DPO** objective that prefers a previous attempt vs. its feedback-guided revision across turns—and (iii) **structured feedback injection** that integrates feedback into the model’s reasoning process to improve feedback utilization and learning.
+
 
 **Implementation note:** The code is developed **on top of the open-source `verl` RL training framework** (Volcano Engine Reinforcement Learning for LLMs; the open-source release of *HybridFlow*). See **Citation** below.
 
