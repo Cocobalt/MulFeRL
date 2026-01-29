@@ -60,7 +60,6 @@ bash verl-main/examples/sglang_multiturn/MulFeRL/mulferl.sh
 | `verl/trainer/` | Trainer logic for MulFeRL |
 | `verl/workers/` | Worker logic for MulFeRL updates |
 | `verl/tools/` | Interfaces/utilities for interacting with an external feedback provider |
-| `verl-main/examples/sglang_multiturn/config/` | Experiment configs |
 | `verl-main/examples/data_preprocess/data.py` | Training data preprocessing entry |
 
 ---
