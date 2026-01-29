@@ -8,7 +8,7 @@ This repository contains the implementation of **MulFeRL** (**Mul**ti-turn **Fe*
 
 ## Quickstart
 
-### 1) Environment setup
+### (1) Environment setup
 
 Create the conda environment from `environment.yaml`:
 
@@ -25,7 +25,7 @@ conda env update -f environment.yaml --prune
 
 ---
 
-### 2) Prepare training data
+### (2) Prepare training data
 
 Preprocess / convert your **training** dataset into the expected parquet format via:
 
@@ -37,7 +37,7 @@ You can adapt this script to map your raw dataset into the required fields used 
 
 ---
 
-### 3) Run training
+### (3) Run training
 
 Launch MulFeRL training with:
 
